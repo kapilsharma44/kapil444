@@ -1,7 +1,7 @@
 pipeline {
   agent any
     tools {
-      maven 'maven-jenkins'
+      maven 'Kapil'
       jdk 'jdk-11-jenkins'
     }
     environment{

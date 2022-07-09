@@ -9,7 +9,7 @@ pipeline {
         AWS_DEFAULT_REGION="ap-south-1" 
         IMAGE_REPO_NAME="kapil444"
         IMAGE_TAG="latest"
-	REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}	
+	REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"	
         EMAIL_TO = 'amrothiyakapil@gmail.com'
 	   		
     }

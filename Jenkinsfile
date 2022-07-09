@@ -11,7 +11,7 @@ pipeline {
         IMAGE_TAG="latest"
 	REPOSITORY_URI = "${385715410843.dkr.ecr.ap-south-1.amazonaws.com/kapil444}"	
         EMAIL_TO = 'amrothiyakapil@gmail.com'
-	    '		
+	   		
     }
     stages{
         stage('Logging into AWS ECR') {

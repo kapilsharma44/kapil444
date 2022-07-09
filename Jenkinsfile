@@ -5,18 +5,19 @@ pipeline {
       jdk 'Kapil'
     }
     environment{
-        AWS_ACCOUNT_ID="466243422136"
+        AWS_ACCOUNT_ID="385715410843"
         AWS_DEFAULT_REGION="ap-south-1" 
-        IMAGE_REPO_NAME="demo06072022"
+        IMAGE_REPO_NAME="kapil444"
         IMAGE_TAG="latest"
-        REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"	
-        EMAIL_TO = 'kalleshdevops@gmail.com'		
+        REPOSITORY_URI = "$385715410843.dkr.ecr.ap-south-1.amazonaws.com/kapil444}"	
+        EMAIL_TO = 'amrothiyakapil@gmail.com
+	    '		
     }
     stages{
         stage('Logging into AWS ECR') {
             steps {
                 script {
-                sh "aws ecr get-login-password --region ${AWS_DEFAULT_REGION} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
+                sh "aws ecr get-login-password --region ${ap-south-1} | docker login --username AWS --password-stdin ${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com"
                 }
              }
         }	         

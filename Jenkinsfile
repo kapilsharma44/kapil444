@@ -10,8 +10,7 @@ pipeline {
         IMAGE_REPO_NAME="kapil444"
         IMAGE_TAG="latest"
 	REPOSITORY_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_DEFAULT_REGION}.amazonaws.com/${IMAGE_REPO_NAME}"	
-        EMAIL_TO = 'amrothiyakapil@gmail.com'
-	   		
+        EMAIL_TO = 'amrothiyakapil@gmail.com'   		
     }
     stages{
         stage('Logging into AWS ECR') {
